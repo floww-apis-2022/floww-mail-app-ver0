@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import app.k9mail.core.ui.compose.common.PreviewDevices
 import app.k9mail.core.ui.compose.designsystem.atom.button.Button
@@ -53,6 +54,7 @@ fun WizardNavigationBar(
                     text = nextButtonText,
                     onClick = onNextClick,
                     enabled = state.isNextEnabled,
+                    color  = Color(0xFF05F4FE)
                 )
             }
         }

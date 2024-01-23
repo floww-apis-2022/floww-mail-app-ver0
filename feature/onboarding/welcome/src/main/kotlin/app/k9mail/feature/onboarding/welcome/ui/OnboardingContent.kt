@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import app.k9mail.core.ui.compose.common.PreviewDevices
@@ -81,6 +82,7 @@ private fun WelcomeLogo(
         Image(
             painter = painterResource(id = R.drawable.onboarding_welcome_logo),
             contentDescription = null,
+
         )
     }
 }
@@ -129,11 +131,12 @@ private fun WelcomeFooter(
         Button(
             text = stringResource(id = R.string.onboarding_welcome_start_button),
             onClick = onStartClick,
+            color = Color(0xFF05F4FE)
         )
-        ButtonText(
-            text = stringResource(id = R.string.onboarding_welcome_import_button),
-            onClick = onImportClick,
-        )
+//        ButtonText(
+//            text = stringResource(id = R.string.onboarding_welcome_import_button),
+//            onClick = onImportClick,
+//        )
     }
 }
 

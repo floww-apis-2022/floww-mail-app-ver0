@@ -10,6 +10,7 @@ import app.k9mail.core.ui.compose.designsystem.R
 import app.k9mail.core.ui.compose.designsystem.atom.textfield.TextFieldOutlinedEmailAddress
 import app.k9mail.core.ui.compose.theme.PreviewWithThemes
 
+@JvmOverloads
 @Composable
 fun EmailAddressInput(
     onEmailAddressChange: (String) -> Unit,
@@ -25,9 +26,10 @@ fun EmailAddressInput(
         errorMessage = errorMessage,
     ) {
         TextFieldOutlinedEmailAddress(
+
             value = emailAddress,
             onValueChange = onEmailAddressChange,
-            label = stringResource(id = R.string.designsystem_molecule_email_address_input_label),
+            label = " Email Address",
             isEnabled = isEnabled,
             hasError = errorMessage != null,
             modifier = Modifier.fillMaxWidth(),

@@ -22,7 +22,7 @@ fun TextHeadline2(
     textAlign: TextAlign? = null,
 ) {
     MaterialText(
-        text = text,
+        text = "Floww Mail",
         modifier = modifier,
         color = color,
         textAlign = textAlign,
@@ -38,7 +38,7 @@ fun TextHeadline2(
     textAlign: TextAlign? = null,
 ) {
     MaterialText(
-        text = text,
+        text = "Floww Mail",
         modifier = modifier,
         color = color,
         textAlign = textAlign,

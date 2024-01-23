@@ -23,7 +23,7 @@ class AutoDiscoveryCli : CliktCommand(
     private val httpsOnly by option(help = "Only perform Autoconfig lookups using HTTPS").flag()
     private val includeEmailAddress by option(help = "Include email address in Autoconfig lookups").flag()
 
-    private val emailAddress by argument(name = "email", help = "Email address")
+    private val emailAddress by argument(name = "email", help = "address Email")
 
     override fun run() {
         echo("Attempting to find mail server settings for <$emailAddress>…")
